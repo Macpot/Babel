@@ -67,10 +67,24 @@
         }
 
         input[type="text"] {
-            width: 180px; 
-            padding: 8px;
-            font-size: 1em;
-        }
+    width: 180px; 
+    padding: 8px;
+    font-size: 1em;
+    border: none;  /* Remove default borders */
+    outline: none; /* Remove the default focus outline */
+    background-color: #fff;
+    color: #333333;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 0; /* Ensure no border radius */
+}
+
+input[type="text"]:focus {
+    background-color: #f0f0f0; /* Slight background change on focus */
+    color: #333333;
+    outline: none; /* No focus outline */
+    border-radius: 0; /* Keep the border-radius zero even on focus */
+}
+
 
         button:hover, input:hover {
             background-color: #333333;
